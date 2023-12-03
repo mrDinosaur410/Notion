@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import ApiFetch from "../util/ApiFetch";
 import Input from "../util/Input";
-/*import TextArea from "../util/TextArea";*/
 import Button from "../util/Button";
-/*import styles from "../css/Styles.module.css";*/
 
 function NewNote() {
   const [title, setTitle] = useState("");
@@ -39,7 +37,6 @@ function NewNote() {
         $required={true}
       />
       {titleError && <div className="text-red-500">{titleError}</div>}
-      {/* <TextArea $onDataChange={setNoteText} $placeholder="Enter some text" /> */}
       <textarea
         onChange={(e) => setNoteText(e.target.value)}
         placeholder={"Enter some text"}

@@ -1,11 +1,9 @@
 import React, { Suspense } from "react";
-/*import { AiFillEdit, AiFillRest } from "react-icons/ai";*/
 import { NavLink, useLoaderData, Await } from "react-router-dom";
 import ApiFetch from "../util/ApiFetch";
 import Button from "../util/Button";
 import Edit from "../../public/images/edit.png";
 import Delete from "../../public/images/delete.png";
-/*import styles from "../css/Styles.module.css";*/
 
 export const loader = ({ params: { id } }) => {
   const notePromise = ApiFetch.getNote(id);
@@ -28,7 +26,7 @@ export default function ViewNote() {
           return (
             <div>
               <div
-                className="md:block md:my-8 flex justify-center gap-12 items-center mb-5" /*className={`${styles.titlePage}`}*/
+                className="md:block md:my-8 flex justify-center gap-12 items-center mb-5"
               >
                 <Button $to="/notes" $text="Back"></Button>
                 <p className="text-3xl font-bold break-all mt-4">

@@ -5,7 +5,6 @@ import Input from "../util/Input";
 import Button from "../util/Button";
 import { useNavigate } from "react-router-dom";
 import User from "../util/validation";
-/*import styles from "../css/Styles.module.css";*/
 
 export default function SignUp() {
   localStorage.removeItem("userId");
@@ -66,7 +65,7 @@ export default function SignUp() {
 
   return (
     <div
-      className="w-3/4 mx-auto mt-12 text-center" /*className={`${styles.container}`}*/
+      className="w-3/4 mx-auto mt-12 text-center"
     >
       <div className="grid gap-4 mb-6 md:grid-cols-1">
         <h1 className="mb-4 text-3xl font-bold text-gray-800 md:text-4xl lg:text-5xl">

@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import { UserContext } from "../components/UserContextProvider";
 import { NavLink, Outlet, useNavigate } from "react-router-dom";
-/*import styles from "../css/Styles.module.css";*/
 
 export default function Layout() {
   const { user } = useContext(UserContext);
@@ -14,10 +13,10 @@ export default function Layout() {
   if (localStorage.getItem("userId")) {
     return (
       <div
-        className="w-3/4 mx-auto mt-12 text-center sm:w-full" /*className={styles.container}*/
+        className="w-3/4 mx-auto mt-12 text-center sm:w-full"
       >
         <div className="flex justify-between items-center mb-7 sm:mb-5 sm:px-2">
-          <p className="md:my-auto sm:my-3" /*className={styles.hello}*/>
+          <p className="md:my-auto sm:my-3">
             Hello, {user.alias}
           </p>
           <nav className="flex gap-5 justify-between text-sm md:justify-normal md:text-base sm:gap-3">
@@ -54,7 +53,7 @@ export default function Layout() {
         <Outlet />
         <hr className="mt-10" />
         <footer
-          className="flex justify-around text-xs md:text-base sm:flex-col sm:text-center" /*className={`flex justify-between ${styles.footer}`}*/
+          className="flex justify-around text-xs md:text-base sm:flex-col sm:text-center"
         >
           <p className="ml-2.5 sm:ml-0">Created by: Cimur Citoŭ</p>
           <p className="mr-2.5 sm:mr-0">BSU: 2023</p>
@@ -67,7 +66,7 @@ export default function Layout() {
         <Outlet />
         <hr className="mt-10" />
         <footer
-          className="flex justify-around text-xs md:text-base sm:flex-col sm:text-center" /*className={`flex justify-between ${styles.footer}`}*/
+          className="flex justify-around text-xs md:text-base sm:flex-col sm:text-center"
         >
           <p className="ml-2.5 sm:ml-0">Created by: Cimur Citoŭ</p>
           <p className="mr-2.5 sm:mr-0">BSU: 2023</p>

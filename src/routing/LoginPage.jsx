@@ -5,7 +5,6 @@ import { UserContext } from "../components/UserContextProvider";
 import Input from "../util/Input";
 import Button from "../util/Button";
 import ApiFetch from "../util/ApiFetch";
-/*import styles from "../css/Styles.module.css";*/
 
 const User = z.object({
   email: z.string().email(),
@@ -48,7 +47,7 @@ function LoginPage() {
 
   return (
     <div
-      className="w-3/4 mx-auto mt-12 text-center" /*className={`${styles.container}`}*/
+      className="w-3/4 mx-auto mt-12 text-center"
     >
       <div className="grid gap-4 mb-6 md:grid-cols-1">
         <h1 className="mb-4 text-3xl font-bold text-gray-800 md:text-4xl lg:text-5xl">
