@@ -1,0 +1,62 @@
+{
+  "users": [
+    {
+      "alias": "1234",
+      "email": "q@a.comc",
+      "password": "1q2w3E4R",
+      "createdAt": 1700857555108,
+      "id": 1
+    },
+    {
+      "alias": "test",
+      "email": "test@gmail.com",
+      "password": "Test12345",
+      "createdAt": 1701280208704,
+      "id": 2
+    },
+    {
+      "alias": "SIGm2a!@gmail.com",
+      "email": "SIGm2a@gmail.com",
+      "password": "SIGm2a!@gmail.com",
+      "createdAt": 1701288752510,
+      "id": 3
+    }
+  ],
+  "notes": [
+    {
+      "userId": 2,
+      "title": "123123123sadasdasd",
+      "text": "123123123asdasd",
+      "createdAt": 1701285353656,
+      "id": 2
+    },
+    {
+      "userId": 3,
+      "title": "13",
+      "text": "",
+      "createdAt": 1701288920496,
+      "id": 3
+    },
+    {
+      "userId": 3,
+      "title": "asdf",
+      "text": "asdfasdf",
+      "createdAt": 1701288950963,
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "title": "sadsad",
+      "text": "sadsadsad",
+      "createdAt": 1701630473344,
+      "id": 5
+    },
+    {
+      "userId": 1,
+      "title": "Hello, 1234  About Notes Log Out Back Create new note  sadsdasdasdasda Enter some text Create Created by: Cimur Citoŭ  BSU: 2023",
+      "text": "qwert",
+      "createdAt": 1701630646529,
+      "id": 6
+    }
+  ]
+}
